@@ -1,0 +1,195 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+
+/*  导航区域  */
+.navigation_home{
+    height: 0.328125rem;
+    background-color: #ff8d1b;
+}
+.navigation_home > .ant-menu-horizontal{
+    border: none;
+    background-color: #ff8d1b;
+    height: 0.321667rem;
+    width: 7.40625rem;
+    margin: 0 auto;
+}
+
+.navigation_home .ant-menu-horizontal > .ant-menu-item{
+    color: #fff;
+    font-size: 0.104167rem;
+    margin-top: 0px; 
+    height: 0.321667rem;
+    width: 1.234375rem;
+    text-align: center;
+    border-right: 1px dotted #fff;
+    border-left: 1px dotted #fff;
+}
+.navigation_home .ant-menu-horizontal > .ant-menu-item:first-of-type{
+    border-left: 1px dotted #fff;
+}
+
+
+.navigation_home .ant-menu-horizontal > .ant-menu-item-active{
+    border: none;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 2px solid #000;
+}
+.navigation_home .ant-menu-horizontal > .ant-menu-item-selected{
+    border: none;
+    color: #fff;
+    background-color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+/*  banner区域  */
+#banner_home{
+    width: 10.0rem;
+    height: 3.270833rem;
+    margin: 0 auto;
+}
+#banner_home .ant-carousel{
+    float: left;
+    width: 7.8rem;
+    height: 3.270833rem;
+}
+#banner_home .slick-slide{
+    height: 3.270833rem;
+}
+#banner_home .banner_navigateCon_home{
+    width: 2.2rem;
+    height: 3.270833rem;
+    background: #1a1920;
+}
+.banner_navigateCon_home > .banner_navigateLi_home{
+    height: 0.640625rem;
+    border-top: 1px solid #2a2930;
+    border-bottom:  1px solid #0a0910;
+    margin-top: 2px;
+}
+.banner_navigateCon_home .banner_navigateLi_home_active{
+    background-color: #ff8d1b;
+}
+.banner_navigateLi_home .imgContent{
+    width: 0.59375rem;
+    height: 0.59375rem;
+    border: 1px solid #656469;
+    margin: 0.015625rem;
+}
+.banner_navigateLi_home .textContent{
+    width: 1.402083rem;
+}
+.banner_navigateLi_home .textContent>dt{
+    line-height: 0.166667rem;
+    font-size: 0.09375rem;
+    color: #ff8d1b;
+    text-align: left;
+    font-weight: bold;
+}
+.banner_navigateLi_home .textContent>.dt_active{
+    color: #000;
+}
+.banner_navigateLi_home .textContent>dd{
+    line-height: 0.114583rem;
+    height: 0.4375rem;
+    font-size: 0.072917rem;
+    color: #fff;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.banner_navigateLi_home .textContent>.dd_active{
+    color: #000;
+}
+.slick-slide > div{
+    height: 100%;
+}
+#banner_home .banner_item_img{
+    position: relative;
+    height: 100%;
+}
+#banner_home .banner_item_img  .images{
+    width: 100%;
+    height: 100%;
+}
+#banner_home .banner_item_img  .popUp_banner_home{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.78125rem;
+    background: rgba(0,0,0,.65);
+}
+
+
+.banner_item_img  .popUp_banner_home>h3{
+    width: 1.041667rem;
+    height: 0.1875rem;
+    text-align: center;
+    line-height: 0.1875rem;
+    font-weight: bold;
+    background-color: #ff8d1b;
+    margin: 0.177083rem 0 0 0.520833rem;
+    font-size: 0.104167rem;
+    color: #fff;
+}
+.banner_item_img  .popUp_banner_home>p{
+    height: 0.375rem;
+    padding: 0.052083rem 0.520833rem;
+    line-height: 0.145833rem;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    color: #fff;
+}
+
+.list_video_home{
+    width: 7.416667rem;
+    height: 2.572917rem;
+    margin: 0.104167rem auto 0;
+    border: 1px solid #dedede;
+    padding: 0.234375rem;
+}
+.list_video_home .li_video_home{
+    width: 1.165rem;
+    margin-right: 0.260417rem;
+}
+.list_video_home > .clearfix{
+    margin-right: -0.3125rem;
+}
+
+.list_video_home .li_video_home .images{
+    display: block;
+    width: 1.1875rem;
+    height: 1.739583rem;
+    margin-right: 0.260417rem;
+}
+.list_video_home .li_video_home dt{
+    line-height: 0.28125rem;
+    color: #222222;
+    font-size: 0.104167rem;
+    text-align: center;
+}
+.list_video_home .li_video_home dd > span{
+    display: inline-block;
+    line-height: 0.154167rem;
+    color: #333333;
+    font-size: 0.104167rem;
+}
+.list_video_home .li_video_home .ant-rate-star{
+    width: 0.088542rem;
+    height: 0.088542rem;
+}
+.list_video_home .li_video_home .ant-rate{
+    color: #ff8d1b;
+}
