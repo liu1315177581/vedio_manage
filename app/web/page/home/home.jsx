@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Carousel,Menu,Rate  } from 'antd';
-import rem from 'asset/js/rem'
+
 import Header from 'component/header/header'
 import 'asset/css/common.css'
+import rem from 'asset/js/rem.js'
 import './home.css';
+
 export default class Home extends Component {
     constructor(props){
         super(props)
@@ -13,7 +15,7 @@ export default class Home extends Component {
         }
     }
     componentDidMount() {
-        rem(window)
+       rem(window, window['lib'] || (window['lib'] = {}))
     }
 
     handleClick(item){
@@ -35,22 +37,24 @@ export default class Home extends Component {
         return(
             <div>
                 <Header />
-                <div className="navigation_home">
-                    <Menu
-                        onClick={this.handleClick.bind(this)}
-                        mode="horizontal"
-                        defaultSelectedKeys={[this.props.navigation_message[0].key]}
-                        >
-                        {
-                            this.props.navigation_message.map((item,index)=>{
-                                return (
-                                    <Menu.Item key={item.key}>
-                                        {item.btn_text}
-                                    </Menu.Item>
-                                )
-                            })
-                        }
-                    </Menu>
+                <div className="movies_nav">
+                    <div className="navigation_home container">
+                        <Menu
+                            onClick={this.handleClick.bind(this)}
+                            mode="horizontal"
+                            defaultSelectedKeys={[this.props.navigation_message[0].key]}
+                            >
+                            {
+                                this.props.navigation_message.map((item,index)=>{
+                                    return (
+                                        <Menu.Item key={item.key}>
+                                            {item.btn_text}
+                                        </Menu.Item>
+                                    )
+                                })
+                            }
+                        </Menu>
+                    </div>
                 </div>
                 <section id="banner_home" className="clearfix">
                     <Carousel 
@@ -100,7 +104,7 @@ export default class Home extends Component {
                         }
                     </ul>
                 </section>
-                <section className="list_video_home">
+                <section className="list_video_home container">
                     <ul className="clearfix">
                         {
                             this.props.banner_message.map((item,index)=>{

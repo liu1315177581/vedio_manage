@@ -20,7 +20,17 @@ module.exports = {
   },
   dll: ['react', 'react-dom'],
   loaders: {
-
+    swig : {
+      test: /\.css$/,
+      use: [
+        {
+          loader:'px2rem-loader',
+          options:{
+            remUnit:135
+          }
+        }
+      ]
+    }
   },
   plugins: {
 

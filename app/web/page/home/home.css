@@ -12,27 +12,27 @@
 
 
 /*  导航区域  */
+.movies_nav{
+    background: #FF8D1B;
+}
 .navigation_home{
-    height: 0.328125rem;
+    height: 50px;
     background-color: #ff8d1b;
 }
 .navigation_home > .ant-menu-horizontal{
+    background: none;
     border: none;
-    background-color: #ff8d1b;
-    height: 0.321667rem;
-    width: 7.40625rem;
-    margin: 0 auto;
 }
 
 .navigation_home .ant-menu-horizontal > .ant-menu-item{
     color: #fff;
-    font-size: 0.104167rem;
-    margin-top: 0px; 
-    height: 0.321667rem;
-    width: 1.234375rem;
-    text-align: center;
+    float: left;
     border-right: 1px dotted #fff;
-    border-left: 1px dotted #fff;
+    width: 16.65%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 15.8px;
 }
 .navigation_home .ant-menu-horizontal > .ant-menu-item:first-of-type{
     border-left: 1px dotted #fff;
@@ -43,13 +43,15 @@
     border: none;
     color: #fff;
     background-color: #000;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px dotted #fff;
 }
 .navigation_home .ant-menu-horizontal > .ant-menu-item-selected{
     border: none;
     color: #fff;
     background-color: #000;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px dotted #fff;
 }
 
 
@@ -61,14 +63,15 @@
 }
 #banner_home .ant-carousel{
     float: left;
-    width: 7.8rem;
+    /*width: 7.8rem;*/
+    width: 77%;
     height: 3.270833rem;
 }
 #banner_home .slick-slide{
     height: 3.270833rem;
 }
 #banner_home .banner_navigateCon_home{
-    width: 2.2rem;
+    width: 23%;
     height: 3.270833rem;
     background: #1a1920;
 }
