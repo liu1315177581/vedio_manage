@@ -55,9 +55,7 @@
     "html-webpack-plugin": "^2.30.1",
     "imagemin-webpack-plugin": "^1.5.2",
     "ip": "^1.1.5",
-    "node-sass": "^4.9.2",
     "px2rem-loader": "^0.1.9",
-    "sass-loader": "^7.0.3",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "webpack-px2rem-loader": "0.0.4"
   },
